@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For My Dear Gurl ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Floating hearts -->
+    <div class="hearts"></div>
+
+    <main>
+
+        <!-- PAGE 1 -->
+        <section class="page active" id="page1">
+
+            <div class="card welcome-card">
+
+                <div class="emoji-big">💗</div>
+
+                <h1>Hiiii My Dear Gurl 🥹❤️</h1>
+
+                <p class="subtitle">
+                    This is specially made for you...
+                </p>
+
+                <p>
+                    Every little page has something from my heart 💕
+                </p>
+
+                <button class="heart-btn" onclick="nextPage()">
+                    ❤️
+                </button>
+
+                <p class="hint">
+                    Click the heart to continue
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- PAGE 2 -->
+        <section class="page" id="page2">
+
+            <div class="card">
+
+                <div class="emoji-big">📅💕</div>
+
+                <h2>What's Your Favourite Date?</h2>
+
+                <p>
+                    Enter the special date you remember ❤️
+                </p>
+
+                <input
+                    type="text"
+                    id="favouriteDate"
+                    placeholder="DD-MM-YYYY"
+                    autocomplete="off"
+                >
+
+                <button onclick="checkFavouriteDate()">
+                    Continue 💗
+                </button>
+
+                <p class="error" id="dateError"></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- PAGE 3 : QUIZ -->
+        <section class="page" id="page3">
+
+            <div class="card quiz-card">
+
+                <div class="emoji-big">😏❤️</div>
+
+                <h2>Naughty Little Quiz 😏</h2>
+
+                <p>
+                    Let's see how well you know me...
+                </p>
+
+                <form id="quizForm">
+
+                    <!-- Q1 -->
+                    <div class="question">
+
+                        <h3>
+                            1. Which part do you like the most in my body?
+                        </h3>
+
+                        <label>
+                            <input type="radio" name="q1" value="a">
+                            a) Lips
+                        </label>
+
+                        <label>
+                            <input type="radio" name="q1" value="b">
+                            b) Hip
+                        </label>
+
+                        <label>
+                            <input type="radio" name="q1" value="c">
+                            c) Eyes
+                        </label>
+
+                        <label>
+                            <input type="radio" name="q1" value="d">
+                            d) Nose
+                        </label>
+
+                    </div>
+
+
+                    <!-- Q2 -->
+                    <div class="question">
+
+                        <h3>
+                            2. Which is your favourite part?
+                        </h3>
+
+                        <label>
+                            <input type="radio" name="q2" value="a">
+                            a) Our First meet
+                        </label>
+
+                        <label>
+                            <input type="radio" name="q2" value="b">
+                            b) Our first hug
+                        </label>
+
+                        <label>
+                            <input type="radio" name="q2" value="c">
+                            c) Our first kiss
+                        </label>
+
+                        <label>
+                            <input type="radio" name="q2" value="d">
+                            d) Our first talk
+                        </label>
+
+                    </div>
+
+
+                    <!-- Q3 -->
+                    <div class="question">
+
+                        <h3>
+                            3. You + Me + Empty dark room. What will you choose?
+                        </h3>
+
+                        <label>
+                            <input type="radio" name="q3" value="a">
+                            a) Nude hug
+                        </label>
+
+                        <label>
+                            <input type="radio" name="q3" value="b">
+                            b) Non-stop kiss
+                        </label>
+
+                        <label>
+                            <input type="radio" name="q3" value="c">
+                            c) Non-stop Sex
+                        </label>
+
+                        <label>
+                            <input type="radio" name="q3" value="d">
+                            d) Sleeping together
+                        </label>
+
+                    </div>
+
+
+                    <!-- Q4 -->
+                    <div class="question">
+
+                        <h3>
+                            4. What's my most dangerous weapon?
+                        </h3>
+
+                        <label>
+                            <input type="radio" name="q4" value="a">
+                            a) My eyes
+                        </label>
+
+                        <label>
+                            <input type="radio" name="q4" value="b">
+                            b) My smile
+                        </label>
+
+                        <label>
+                            <input type="radio" name="q4" value="c">
+                            c) My voice
+                        </label>
+
+                        <label>
+                            <input type="radio" name="q4" value="d">
+                            d) The way I look at you
+                        </label>
+
+                    </div>
+
+
+                    <!-- Q5 -->
+                    <div class="question">
+
+                        <h3>
+                            5. What do you like the most?
+                        </h3>
+
+                        <label>
+                            <input type="radio" name="q5" value="a">
+                            a) Me
+                        </label>
+
+                        <label>
+                            <input type="radio" name="q5" value="b">
+                            b) My face
+                        </label>
+
+                        <label>
+                            <input type="radio" name="q5" value="c">
+                            c) My smile
+                        </label>
+
+                        <label>
+                            <input type="radio" name="q5" value="d">
+                            d) My style
+                        </label>
+
+                    </div>
+
+
+                    <button type="button" onclick="checkQuiz()">
+                        Submit Answers ❤️
+                    </button>
+
+                </form>
+
+                <p class="quiz-result" id="quizResult"></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- PAGE 4 -->
+        <section class="page" id="page4">
+
+            <div class="card">
+
+                <div class="emoji-big">🥰</div>
+
+                <h2>Enter Your First Meetup Date</h2>
+
+                <p>
+                    Let's see if you remember our special day ❤️
+                </p>
+
+                <input
+                    type="text"
+                    id="meetupDate"
+                    placeholder="DD-MM-YYYY"
+                    autocomplete="off"
+                >
+
+                <button onclick="checkMeetupDate()">
+                    ❤️ Click Heart ❤️
+                </button>
+
+                <p class="error" id="meetupError"></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- PAGE 5 -->
+        <section class="page" id="page5">
+
+            <div class="card">
+
+                <div class="emoji-big">🔐❤️</div>
+
+                <h2>Enter Your Husband's Mobile Password</h2>
+
+                <p>
+                    Only you should know this one 😏
+                </p>
+
+                <input
+                    type="password"
+                    id="mobilePassword"
+                    placeholder="Enter password"
+                    maxlength="4"
+                >
+
+                <button onclick="checkPassword()">
+                    ❤️ Heart ❤️
+                </button>
+
+                <p class="error" id="passwordError"></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- PAGE 6 -->
+        <section class="page" id="page6">
+
+            <div class="card congratulations">
+
+                <div class="celebration">
+                    🎉🥳🎊💖🎉🥳🎊
+                </div>
+
+                <h1>Congratulations!!! ❤️</h1>
+
+                <p>
+                    You passed every little challenge! 🥹💕
+                </p>
+
+                <p>
+                    You really know me... 😏❤️
+                </p>
+
+                <button onclick="nextPage()">
+                    Click Here To Continue 💗
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- PAGE 7 -->
+        <section class="page" id="page7">
+
+            <div class="card music-card">
+
+                <div class="emoji-big">🎵❤️</div>
+
+                <h2>This Song Is Dedicated For You</h2>
+
+                <p class="song-title">
+                    Muthal Nee Mudivum Nee 💕
+                </p>
+
+                <div class="music-player">
+
+                    <audio id="loveSong" controls>
+                        <source
+                            src="music/muthal-nee-mudivum-nee.mp3"
+                            type="audio/mpeg"
+                        >
+                        Your browser does not support audio.
+                    </audio>
+
+                </div>
+
+                <p>
+                    Press play and listen with your heart ❤️
+                </p>
+
+                <button onclick="goToCountdown()">
+                    ❤️ Click Heart To Continue ❤️
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- PAGE 8 : COUNTDOWN -->
+        <section class="page" id="page8">
+
+            <div class="countdown-card">
+
+                <p class="countdown-small">
+                    Something beautiful is waiting...
+                </p>
+
+                <div id="countdown">
+                    10
+                </div>
+
+                <p>
+                    Get ready... ❤️
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- PAGE 9 : FINAL -->
+        <section class="page final-page" id="page9">
+
+            <div class="final-content">
+
+                <div class="final-hearts">
+                    💕 💗 💖 💞 💓
+                </div>
+
+                <h1>
+                    Our Story Doesn't End Here…
+                </h1>
+
+                <h2>
+                    It Gets Better From Here ❤️
+                </h2>
+
+                <div class="divider"></div>
+
+                <p class="final-message">
+                    Thank you for being my favorite chapter.
+                </p>
+
+                <p class="final-message">
+                    Now let's create the rest of our story together 💕
+                </p>
+
+                <h2 class="love-text">
+                    I Love You Soo Much Babyy !! ❤️🥹
+                </h2>
+
+                <div class="soft-emojis">
+                    🌙✨🫶🏻💗🥹🌸💫
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
